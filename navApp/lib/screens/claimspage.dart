@@ -234,9 +234,9 @@ class ClaimsPage extends StatelessWidget {
                               decoration: TextDecoration.none,
                             ))),
                     Container(
-                      margin: const EdgeInsets.fromLTRB(30, 2, 20, 20),
+                      margin: const EdgeInsets.fromLTRB(30, 2, 20, 0),
                       child: const SizedBox(
-                        height: 300,
+                        height: 200,
                         child: TextField(
                             maxLines: 8,
                             decoration: InputDecoration(
@@ -255,6 +255,51 @@ class ClaimsPage extends StatelessWidget {
                             )),
                       ),
                     ),
+                    Container(
+                        margin: const EdgeInsets.fromLTRB(30, 0, 10, 0),
+                        child: const Text(
+                            'Please upload any imagery or video evidence that may support what happened.',
+                            style: TextStyle(
+                              color: Colors.black54,
+                              fontSize: 13,
+                              decoration: TextDecoration.none,
+                            ))),
+                    Container(
+                      margin: const EdgeInsets.fromLTRB(30, 2, 20, 0),
+                      child: const SizedBox(
+                        height: 200,
+                        child: TextField(
+                            maxLines: 8,
+                            decoration: InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    width: 1,
+                                    color: Color.fromARGB(
+                                        255, 4, 199, 248)), //<-- SEE HERE
+                              ),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    width: 1,
+                                    color: Color.fromARGB(
+                                        255, 4, 199, 248)), //<-- SEE HERE
+                              ),
+                            )),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.fromLTRB(30, 10, 20, 20),
+                      height: 40, //height of button
+                      width: 4000,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromARGB(255, 214, 19, 6)),
+                        child: const Text(
+                          'Submit Claim',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        onPressed: () => {},
+                      ),
+                    )
                   ],
                 ),
               ),

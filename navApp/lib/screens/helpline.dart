@@ -146,10 +146,10 @@ class Helpline extends StatelessWidget {
                                   const Color.fromARGB(255, 217, 0, 0),
                             ),
                           )),
-                      // const SizedBox(
-                      //   //Use of SizedBox
-                      //   height: 10,
-                      // ),
+                      const SizedBox(
+                        //Use of SizedBox
+                        height: 10,
+                      ),
                       Container(
                           margin: const EdgeInsets.only(left: 20, right: 20),
                           height: 60, //height of button

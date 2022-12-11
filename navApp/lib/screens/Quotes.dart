@@ -1,7 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:scroll_loop_auto_scroll/scroll_loop_auto_scroll.dart';
 
 void main(List<String> args) {
   runApp(const Quotes());

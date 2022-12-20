@@ -67,7 +67,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.perm_phone_msg),
-            label: 'Helpline',
+            label: 'HelplIne',
           )
         ],
         type: BottomNavigationBarType.fixed,

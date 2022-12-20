@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:nav_app/assets/pic1.png';
 
 void main(List<String> args) {
   runApp(const Quotes());
@@ -52,20 +53,23 @@ class Quotes extends StatelessWidget {
                             width: 20,
                           ),
                           Container(
-                            width: 250,
-                            decoration: BoxDecoration(
-                              borderRadius: const BorderRadius.all(
-                                Radius.circular(8),
+                              width: 250,
+                              decoration: BoxDecoration(
+                                borderRadius: const BorderRadius.all(
+                                  Radius.circular(8),
+                                ),
+                                color: Colors.purple[500],
                               ),
-                              color: Colors.purple[500],
-                            ),
-                            child: const Center(
-                                child: Text(
-                              'Item 2',
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
-                            )),
-                          ),
+                              child: const Image(
+                                image: AssetImage('./lib/assets/pic1.png'),
+                              )
+                              // const Center(
+                              //     child: Text(
+                              //   'Item 2',
+                              //   style:
+                              //       TextStyle(fontSize: 18, color: Colors.white),
+                              // )),
+                              ),
                           const SizedBox(
                             width: 20,
                           ),
